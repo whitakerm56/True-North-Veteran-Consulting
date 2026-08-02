@@ -187,6 +187,7 @@ nav.main-nav a:hover, nav.main-nav a[aria-current="page"] { border-bottom-color:
 .hero::before {
   content: "";
   position: absolute; inset: 0;
+  z-index: 0;
   background-image: url('../assets/camo-pattern.svg');
   background-size: 900px 900px;
   opacity: 0.85;
@@ -194,9 +195,10 @@ nav.main-nav a:hover, nav.main-nav a[aria-current="page"] { border-bottom-color:
 .hero::after {
   content: "";
   position: absolute; inset: 0;
+  z-index: 1;
   background: linear-gradient(100deg, rgba(20,19,16,0.97) 0%, rgba(20,19,16,0.94) 48%, rgba(20,19,16,0.78) 68%, rgba(20,19,16,0.35) 100%);
 }
-.hero .wrap { position: relative; padding: 110px 28px 96px; }
+.hero .wrap { position: relative; z-index: 2; padding: 110px 28px 96px; }
 .hero-inner { max-width: 700px; }
 .hero h1 {
   color: #fff;
